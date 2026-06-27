@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'>
+<title>GE Validation Report</title><style>
+body{font-family:Arial,sans-serif;margin:30px;color:#212529}
+h1{color:#343a40}h2{color:#495057;border-bottom:2px solid #dee2e6;padding-bottom:4px}
+table{border-collapse:collapse;width:100%;margin-bottom:30px;font-size:14px}
+th{background:#343a40;color:white;padding:10px;text-align:left}
+td{padding:8px 10px;border-bottom:1px solid #dee2e6}
+.badge{font-size:15px;font-weight:bold;padding:8px 16px;border-radius:4px;display:inline-block;margin:10px 0}
+</style></head><body>
+<h1>Great Expectations - Validation Report</h1>
+<p><strong>Suite:</strong> customer_data_expectations &nbsp;|&nbsp; <strong>GE:</strong> 1.18.2 &nbsp;|&nbsp; <strong>Rows:</strong> 5015</p>
+<div class="badge" style="background:#f8d7da;color:#721c24">Overall Result: FAILED (expected - dataset is intentionally messy)</div>
+<h2>Expectation Results (8 expectations)</h2><table>
+<thead><tr><th>Column</th><th>Expectation</th><th>Passed</th><th>Element Count</th><th>Unexpected #</th><th>Unexpected %</th></tr></thead>
+<tbody><tr style="background:#f8d7da"><td>customer_id</td><td>expect_column_values_to_not_be_null</td><td style="text-align:center;font-weight:bold">FAIL</td><td style="text-align:right">5015</td><td style="text-align:right">150</td><td style="text-align:right">3.0%</td></tr>
+<tr style="background:#f8d7da"><td>customer_id</td><td>expect_column_values_to_be_unique</td><td style="text-align:center;font-weight:bold">FAIL</td><td style="text-align:right">5015</td><td style="text-align:right">568</td><td style="text-align:right">11.7%</td></tr>
+<tr style="background:#f8d7da"><td>age</td><td>expect_column_values_to_be_between</td><td style="text-align:center;font-weight:bold">FAIL</td><td style="text-align:right">5015</td><td style="text-align:right">384</td><td style="text-align:right">7.9%</td></tr>
+<tr style="background:#f8d7da"><td>email</td><td>expect_column_values_to_match_regex</td><td style="text-align:center;font-weight:bold">FAIL</td><td style="text-align:right">5015</td><td style="text-align:right">346</td><td style="text-align:right">7.6%</td></tr>
+<tr style="background:#f8d7da"><td>salary</td><td>expect_column_values_to_not_be_null</td><td style="text-align:center;font-weight:bold">FAIL</td><td style="text-align:right">5015</td><td style="text-align:right">425</td><td style="text-align:right">8.5%</td></tr>
+<tr style="background:#f8d7da"><td>country</td><td>expect_column_values_to_be_in_set</td><td style="text-align:center;font-weight:bold">FAIL</td><td style="text-align:right">5015</td><td style="text-align:right">301</td><td style="text-align:right">6.1%</td></tr>
+<tr style="background:#d4edda"><td>signup_date</td><td>expect_column_values_to_be_of_type</td><td style="text-align:center;font-weight:bold">PASS</td><td style="text-align:right">-</td><td style="text-align:right">-</td><td style="text-align:right">-</td></tr>
+<tr style="background:#f8d7da"><td>TABLE</td><td>expect_table_row_count_to_be_between</td><td style="text-align:center;font-weight:bold">FAIL</td><td style="text-align:right">-</td><td style="text-align:right">-</td><td style="text-align:right">-</td></tr>
+</tbody></table>
+<h2>All Data Quality Issues Found</h2><table>
+<thead><tr><th>Issue</th><th>Count</th></tr></thead>
+<tbody><tr><td>Total rows (expected 500-1000)</td><td style="text-align:right">5015</td></tr>
+<tr><td>Null customer_id</td><td style="text-align:right">150</td></tr>
+<tr><td>Duplicate customer_id</td><td style="text-align:right">452</td></tr>
+<tr><td>Fully duplicate rows</td><td style="text-align:right">15</td></tr>
+<tr><td>Age out of range (< 0 or > 120)</td><td style="text-align:right">384</td></tr>
+<tr><td>Missing age</td><td style="text-align:right">147</td></tr>
+<tr><td>Invalid email format</td><td style="text-align:right">346</td></tr>
+<tr><td>Missing email</td><td style="text-align:right">438</td></tr>
+<tr><td>Missing salary (fails 95% rule)</td><td style="text-align:right">425</td></tr>
+<tr><td>Negative salary</td><td style="text-align:right">159</td></tr>
+<tr><td>Invalid country value</td><td style="text-align:right">301</td></tr>
+<tr><td>Missing country</td><td style="text-align:right">41</td></tr>
+<tr><td>Missing phone</td><td style="text-align:right">319</td></tr>
+<tr><td>Missing signup_date</td><td style="text-align:right">14</td></tr>
+</tbody></table>
+</body></html>
