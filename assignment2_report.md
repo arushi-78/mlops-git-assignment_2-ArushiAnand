@@ -23,6 +23,7 @@
 | Missing `phone` | 319 |
 | Missing `signup_date` | 14 |
 
+
 ## 3. pytest Execution - All Tests Passing
 
 <img width="442" height="362" alt="image" src="https://github.com/user-attachments/assets/6b7c7724-6881-47c7-9611-9ab27c198b92" />
