@@ -6,6 +6,7 @@
 <img width="940" height="438" alt="image" src="https://github.com/user-attachments/assets/a9e279eb-ee3a-459c-9860-1b95a3631164" />
 ## 2. Data Quality Issues Found
 <img width="940" height="402" alt="image" src="https://github.com/user-attachments/assets/89c617d2-50da-44cd-9025-5f946de0d585" />
+
 | Issue | Count |
 |-------|------:|
 | Total rows (expected 500–1000) | **5,015** |
