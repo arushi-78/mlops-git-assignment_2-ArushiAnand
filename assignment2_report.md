@@ -3,10 +3,8 @@
 **Student:** Arushi Anand  
 
 ## 1. GE Validation Results
-![GE Validation Results](screenshot_ge_validation.png)
 <img width="940" height="438" alt="image" src="https://github.com/user-attachments/assets/a9e279eb-ee3a-459c-9860-1b95a3631164" />
 ## 2. Data Quality Issues Found
-![Data Quality Issues](screenshot_ge_html.png)
 <img width="940" height="402" alt="image" src="https://github.com/user-attachments/assets/89c617d2-50da-44cd-9025-5f946de0d585" />
 | Issue | Count |
 |-------|------:|
@@ -26,11 +24,12 @@
 | Missing `signup_date` | 14 |
 
 ## 3. pytest Execution - All Tests Passing
-![pytest Results](screenshot_pytest.png)
+
 <img width="442" height="362" alt="image" src="https://github.com/user-attachments/assets/6b7c7724-6881-47c7-9611-9ab27c198b92" />
+
 29 tests collected and passed in 1.66 seconds across three test classes.
 
-## 4. Reflection – Which Data Quality Issue Would Most Impact ML Model Performance?
+## 4. Reflection: Which Data Quality Issue Would Most Impact ML Model Performance?
 
 **Missing and invalid `salary` values would cause the greatest harm to ML model performance.**
 
